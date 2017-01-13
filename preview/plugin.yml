@@ -1,0 +1,31 @@
+name: SimplePlayerInfo
+version: 1.0
+author: ItzSiL3Nce
+website: https://www.github.com/ItzSiL3Nce
+description: A simple plugin that shows a configurable GUI when clicking a playername in chat.
+depend: [Vault]
+main: it.itzsil3nce.simpleplayerinfo.SimplePlayerInfo
+commands:
+  playerinfo:
+    description: Opens a GUI with interactions with the specified player.
+    usage: /<command> <player>
+    aliases: [pinfo,infoplayer]
+    permission: simpleplayerinfo.playerinfo
+  simpleplayerinfo:
+    description: SPI Main command.
+    usage: /<command> <reload>
+    aliases: [spi,simplepinfo,simpleinfo]
+    permission: simpleplayerinfo.simpleplayerinfo
+permissions:
+  simpleplayerinfo.*:
+    children:
+      simpleplayerinfo.playerinfo: true
+      simpleplayerinfo.simpleplayerinfo: true
+    default: op
+    description: Allows the possessor to do everything related to this plugin.
+  simpleplayerinfo.playerinfo:
+    default: true
+    description: Allows the possessor to access to the playerinfo command.
+  simpleplayerinfo.simpleplayerinfo:
+    default: op
+    description: Allows the possessor to reload the configuration of this plugin.

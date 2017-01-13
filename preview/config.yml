@@ -1,0 +1,84 @@
+no-permissions: '&cNo permissions.'
+invalid-player: '&cThat player doesn''t exist!'
+
+hover: '&bClick to interact with this player.'
+
+# Edit the GUI as much as you like following the default example
+# glow: true WORKS ONLY IN NON-PROTOCOL HACK VERSIONS. IF YOU WANT IT TO BE ENCHANTED YOU CAN
+# STILL DO IT, TRULY ENCHANTING THE ITEM, LIKE THIS: 
+#   enchants:
+#     - 'DURABILITY:1'
+player-info:
+  size: 9
+  title: '&4&l{player}'
+  glass-1:
+    position: 0
+    type: STAINED_GLASS_PANE
+    name: '&bMinecraft.net'
+    data: 1
+    glow: true
+  glass-2:
+    position: 1
+    type: STAINED_GLASS_PANE
+    name: '&bMinecraft.net'
+    data: 2
+    glow: true
+  glass-4:
+    position: 7
+    type: STAINED_GLASS_PANE
+    name: '&bMinecraft.net'
+    data: 4
+    glow: true
+  glass-5:
+    position: 8
+    type: STAINED_GLASS_PANE
+    name: '&bMinecraft.net'
+    data: 5
+    glow: true
+  tpa-button:
+    position: 2
+    type: ENDER_PEARL
+    name: '&7Teleport'
+    description:
+    - '&eSend a teleport request'
+    - '&eto &6&l{player}&e!'
+    command: /tpa {player}
+    glow: true
+  report-button:
+    position: 3
+    type: REDSTONE_BLOCK
+    name: '&2Report'
+    description:
+    - '&eReport &6&l{player}'
+    - '&eto the staff!'
+    command: /report {player}
+  trade-button:
+    position: 4
+    type: CHEST
+    name: '&9Trade'
+    description:
+    - '&eSend a trade request'
+    - '&eto &6&l{player}&e!'
+    command: /trade {player}
+    glow: true
+  duel-button:
+    position: 5
+    type: DIAMOND_SWORD
+    name: '&aDuello'
+    description:
+    - '&eSend a duel request'
+    - '&eto &6&l{player}&e!'
+    command: /duel {player}
+    glow: true
+  info-button:
+    position: 6
+    type: PLAYER_HEAD
+    name: '&f{player}'
+    description:
+    - '&bName: &6{displayname}'
+    - '&3Money: &6{money}&2&l$'
+    - '&aPing: &6{ping}'
+    - '&cGroup: &6{group}'
+    - '&eLevel: &6{level}'
+    - '&dWorld: &6{world}'
+    glow: true
